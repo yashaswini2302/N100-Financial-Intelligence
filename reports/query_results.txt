@@ -1,0 +1,36 @@
+
+Total Companies
+========================================
+(20,)
+
+Companies by Sector
+========================================
+('Automobile', 1)
+('Banking', 4)
+('Cement', 1)
+('Chemicals', 1)
+('Consumer Goods', 1)
+('Energy', 1)
+('FMCG', 2)
+('Financial Services', 1)
+('IT', 3)
+('Infrastructure', 1)
+('Pharma', 1)
+('Power', 2)
+('Telecom', 1)
+
+Top Market Cap Companies
+========================================
+('Reliance Industries', 2100000)
+('Tata Consultancy Services', 1450000)
+('HDFC Bank', 1350000)
+('ICICI Bank', 980000)
+('Bharti Airtel', 960000)
+
+Latest Stock Prices
+========================================
+(1, '2025-07-01 00:00:00', 1508)
+(2, '2025-07-01 00:00:00', 3910)
+(3, '2025-07-01 00:00:00', 1608)
+(4, '2025-07-01 00:00:00', 1718)
+(5, '2025-07-01 00:00:00', 1301)
