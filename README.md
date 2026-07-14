@@ -12,3 +12,11 @@
 - Cash Flow KPIs
 - Financial Ratio Generation
 - Automated Unit Testing
+
+### Sprint 3
+- Stock Screener Engine
+- Composite Scoring
+- Peer Percentile Rankings
+- Radar Charts
+- Export Engine
+- Interactive CLI

@@ -1,0 +1,21 @@
+company_id,net_profit_margin_pct,operating_profit_margin_pct,return_on_equity_pct,return_on_assets_pct,debt_to_equity,interest_coverage,asset_turnover,free_cash_flow_cr,fcf_conversion_pct,revenue_cagr_5yr,pat_cagr_5yr,eps_cagr_5yr,quality_score,company_name,sector,return_on_equity_pct_percentile,return_on_assets_pct_percentile,net_profit_margin_pct_percentile,debt_to_equity_percentile,free_cash_flow_cr_percentile,revenue_cagr_5yr_percentile,pat_cagr_5yr_percentile,eps_cagr_5yr_percentile,interest_coverage_percentile,asset_turnover_percentile
+1,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Reliance Industries,Energy,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+2,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Tata Consultancy Services,IT,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667
+3,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Infosys,IT,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667
+4,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,HDFC Bank,Banking,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625
+5,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,ICICI Bank,Banking,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625
+6,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,State Bank of India,Banking,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625
+7,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,ITC Ltd,FMCG,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75
+8,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Hindustan Unilever,FMCG,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75
+9,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Larsen & Toubro,Infrastructure,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+10,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Bharti Airtel,Telecom,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+11,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Asian Paints,Chemicals,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+12,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Axis Bank,Banking,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625
+13,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Maruti Suzuki,Automobile,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+14,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Bajaj Finance,Financial Services,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+15,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Sun Pharmaceutical,Pharma,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+16,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Titan Company,Consumer Goods,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+17,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,UltraTech Cement,Cement,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+18,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,NTPC Ltd,Power,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75
+19,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Power Grid Corporation,Power,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75
+20,20.0,15.0,18.0,9.0,0.8,6.0,1.5,100,60,12,14,13,High,Wipro,IT,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667,0.667
