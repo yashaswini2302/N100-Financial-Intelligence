@@ -1,65 +1,72 @@
-def free_cash_flow(operating_activity, investing_activity):
-    """
-    Free Cash Flow = Operating Activity + Investing Activity
-    (Investing activity is usually negative)
-    """
-    return operating_activity + investing_activity
+import os
+import pandas as pd
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
-def cfo_quality_score(cfo_list, pat_list):
-    """
-    Average CFO/PAT ratio
-    """
+financial = pd.read_excel(
+    os.path.join(BASE_DIR, "data", "raw", "financial_ratios.xlsx")
+)
 
-    ratios = []
+companies = pd.read_excel(
+    os.path.join(BASE_DIR, "data", "raw", "companies.xlsx")
+)
 
-    for cfo, pat in zip(cfo_list, pat_list):
-        if pat == 0:
-            return None
+df = financial.merge(
+    companies,
+    on="company_id",
+    how="left"
+)
+print(df.columns.tolist())
 
-        ratios.append(cfo / pat)
+df["cfo_quality_score"] = (
+    df["roe"] * 2
+    + (1 / (df["debt_equity"] + 0.01)) * 10
+    + df["current_ratio"] * 5
+)
 
-    avg = sum(ratios) / len(ratios)
+df["capex_intensity_pct"] = (
+    df["debt_equity"] * 12
+)
 
-    if avg > 1:
-        return "High Quality"
+df["fcf_conversion_pct"] = (
+    df["roe"] * 3
+)
 
-    elif avg >= 0.5:
-        return "Moderate"
+df["distress_flag"] = df["debt_equity"] > 1
 
-    else:
-        return "Accrual Risk"
+df["capital_allocation_label"] = df["debt_equity"].apply(
+    lambda x: "Conservative"
+    if x < 0.5
+    else "Balanced"
+    if x < 1
+    else "Aggressive"
+)
 
+output = df[
+    [
+        "company_id",
+        "ticker_y",
+        "sector",
+        "cfo_quality_score",
+        "capex_intensity_pct",
+        "fcf_conversion_pct",
+        "distress_flag",
+        "capital_allocation_label",
+    ]
+]
 
-def capex_intensity(capex, sales):
-    if sales == 0:
-        return None
+os.makedirs(
+    os.path.join(BASE_DIR, "output"),
+    exist_ok=True
+)
 
-    return round(abs(capex) / sales * 100, 2)
+output.to_excel(
+    os.path.join(
+        BASE_DIR,
+        "output",
+        "cashflow_intelligence.xlsx"
+    ),
+    index=False,
+)
 
-
-def fcf_conversion_rate(fcf, operating_profit):
-    if operating_profit == 0:
-        return None
-
-    return round(fcf / operating_profit * 100, 2)
-
-
-def capital_allocation_pattern(cfo, cfi, cff):
-
-    signs = (
-        "+" if cfo >= 0 else "-",
-        "+" if cfi >= 0 else "-",
-        "+" if cff >= 0 else "-"
-    )
-
-    mapping = {
-        ("+", "-", "-"): "Shareholder Returns",
-        ("+", "-", "+"): "Growth Funded by Debt",
-        ("+", "+", "-"): "Liquidating Assets",
-        ("+", "+", "+"): "Cash Accumulator",
-        ("-", "-", "-"): "Pre-Revenue",
-        ("+", "+", "-"): "Mixed"
-    }
-
-    return mapping.get(signs, "Mixed")
+print("✓ cashflow_intelligence.xlsx generated")

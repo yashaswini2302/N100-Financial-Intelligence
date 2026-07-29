@@ -1,0 +1,23 @@
+company_id,company,type,text,confidence_pct
+1,RELIANCE,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+1,RELIANCE,Con,Low ROE suggests weaker profitability.,85
+2,TCS,Pro,Strong Return on Equity indicates efficient capital utilization.,95
+2,TCS,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+2,TCS,Pro,Strong liquidity position with good Current Ratio.,88
+3,INFY,Pro,Strong Return on Equity indicates efficient capital utilization.,95
+3,INFY,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+3,INFY,Pro,Strong liquidity position with good Current Ratio.,88
+4,HDFCBANK,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+5,ICICIBANK,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+6,SBIN,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+6,SBIN,Con,Low ROE suggests weaker profitability.,85
+7,ITC,Pro,Strong Return on Equity indicates efficient capital utilization.,95
+7,ITC,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+7,ITC,Pro,Strong liquidity position with good Current Ratio.,88
+8,HINDUNILVR,Pro,Strong Return on Equity indicates efficient capital utilization.,95
+8,HINDUNILVR,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+8,HINDUNILVR,Pro,Strong liquidity position with good Current Ratio.,88
+9,LT,Pro,Low Debt-to-Equity ratio indicates a healthy balance sheet.,90
+9,LT,Con,Low ROE suggests weaker profitability.,85
+10,BHARTIARTL,Con,Low ROE suggests weaker profitability.,85
+10,BHARTIARTL,Con,Weak liquidity position.,84
